@@ -5,7 +5,9 @@ from heapq import heappop, heappush
 
 
 T = TypeVar('T')
-
+# TODO: Learn what Djikstra's Algorithm is and how it varies from astar.
+# TODO: Figure out where to jot down ideas about how to make KNIGHTS work better
+# TODO: Think about scanning larger chunks of the maze first
 
 class PriorityQueue(Generic[T]):
     def __init__(self) -> None:

@@ -139,7 +139,7 @@ if __name__ == '__main__':
                                                                       
                                                                      ''')
 
-    f = Maze(arrow1)
+    f = Maze(data_test)
     print(f.limits, f.start, f.goal)
     w = MazeWin(f)
     # s = bfs(f.start, f.goal_test, f.successors, w)
