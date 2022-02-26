@@ -139,13 +139,13 @@ if __name__ == '__main__':
                                                                       
                                                                      ''')
 
-    f = Maze(data_test)
+    f = Maze(arrow1)
     print(f.limits, f.start, f.goal)
     w = MazeWin(f)
     # s = bfs(f.start, f.goal_test, f.successors, w)
     dist = f.euclidian_distance()
     a = astar(f.start, f.goal_test, f.successors,
-              dist, w)
+               dist, w)
 
     w.show_path(a)
     w.exit_on_click()
